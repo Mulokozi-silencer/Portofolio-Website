@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mulokozi Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.3/css/all.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Sidebar -->
+    <aside>
+      <ul class="Links">
+        <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i><p>Home</p></li>
+        <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i><p>About Me</p></li>
+        <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i><p>Services</p></li>
+        <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i><p>Gallery</p></li>
+        <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i><p>Contact Me</p></li>
+      </ul>
+    </aside>
+
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Home Slide -->
+        <div class="swiper-slide home-slide">
+          <div class="HomeContent">
+            <h1>Hi! I'm <span class="stylized-name">Mulokozi</span>,</h1>
+            <h2>A <span class="professions">Web Developer</span></h2>
+            <p class="heroine">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorem saepe voluptate, velit officia blanditiis nihil omnis explicabo.</p>
+
+            <div class="buttonGroup">
+              <button>Hire Me</button>
+              <button>Contact</button>
+            </div>
+
+            <div class="SideImg">
+              <div class="top-right-corner">
+                <hr class="hr1"><hr class="hr2">
+              </div>
+              <img src="img/Mulokozi_photo.jpg" alt="Mulokozi">
+              <div class="bottom-left-corner">
+                <hr class="hr1"><hr class="hr2">
+              </div>
+            </div>
+
+            <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i></p>
+          </div>
+        </div>
+
+        <!-- About Slide -->
+        <div class="swiper-slide about-slide">
+          <h1 class="heading">About Me</h1>
+          <h3 class="sub-heading">I'm Mulokozi, <span class="professions">A Web Developer</span></h3>
+          <p class="aboutme-details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum impedit eligendi eaque itaque labore. Beatae fuga adipisci unde.
+          </p>
+
+          <div class="about-me-division">
+            <div class="about-me-table">
+              <li><span>Experience:</span> 4+ years</li>
+              <li><span>Degree:</span> Computer Science</li>
+              <li><span>Country:</span> Tanzania</li>
+              <li><span>Availability:</span> 24/7</li>
+              <li><span>Satisfied Clients:</span> 198+</li>
+              <li><span>Age:</span> 25</li>
+              <li><span>Phone:</span> +255 688 678 996</li>
+              <li><span>Languages:</span> English | Swahili</li>
+            </div>
+
+            <!-- Skills -->
+            <div class="skill-bar">
+              <li><p>HTML</p><div class="bar"><div class="active-bar" style="width: 99%;"></div></div></li>
+              <li><p>JavaScript</p><div class="bar"><div class="active-bar" style="width: 85%;"></div></div></li>
+              <li><p>PHP</p><div class="bar"><div class="active-bar" style="width: 90%;"></div></div></li>
+              <li><p>Django</p><div class="bar"><div class="active-bar" style="width: 88%;"></div></div></li>
+              <li><p>Python</p><div class="bar"><div class="active-bar" style="width: 80%;"></div></div></li>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services Slide -->
+        <div class="swiper-slide services-slide">
+          <h1 class="heading">Services</h1>
+          <div class="service">
+            <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i>
+          </div><h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-globe"></i></div><h2>Web Development</h2><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div><h2>SEO</h2><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-image"></i></div><h2>Network Admin</h2><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><h2>Software Developer</h2><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-database"></i></div><h2>Database Admin</h2><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+        </div>
+
+        <!-- Gallery Slide -->
+        <div class="swiper-slide gallery-slide">
+          <h1 class="heading">Gallery</h1>
+          <div class="project"><img src="img/project1.jpg" alt="Project 1"></div>
+          <div class="project"><img src="img/project2.jpg" alt="Project 2"></div>
+          <div class="project"><img src="img/project3.jpg" alt="Project 3"></div>
+          <div class="project"><img src="img/project4.jpg" alt="Project 4"></div>
+          <div class="project"><img src="img/project5.jpg" alt="Project 5"></div>
+          <div class="project"><img src="img/project6.jpg" alt="Project 6"></div>
+        </div>
+
+        <!-- Contact Slide -->
+        <div class="swiper-slide contact-slide">
+          <h1 class="heading">Contact Me</h1>
+          <div class="contactinfo"><i class="fa-solid fa-phone"></i><h3>Mobile No</h3><p>+255 688 678 996</p></div>
+          <div class="contactinfo"><i class="fa-solid fa-location-dot"></i><h3>Location</h3><p>Dar es Salaam, Tanzania</p></div>
+          <div class="contactinfo"><i class="fa-regular fa-envelope"></i><h3>Email</h3><p>mulokoziwillium@gmail.com</p></div>
+          <div class="contactinfo"><i class="fa-solid fa-globe"></i><h3>Website</h3><p>www.mulokozi.dev</p></div>
+
+          <!-- Contact Form -->
+          <form action="submit_form.php">
+            <h2>Send Me A Message</h2>
+            <div class="SocialLinks">
+              <i class="fa-brands fa-codepen"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="10" placeholder="Type your message here..." required></textarea>
+            <button class="primary">Send</button>
+          </form>
+
+          <footer>
+            <p>&copy; 2025 Mulokozi. All Rights Reserved.</p>
+          </footer>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      direction: "horizontal",
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      keyboard: true
+    });
+
+    // Sidebar Navigation Function
+    function Navigate(index) {
+      swiper.slideTo(index);
+      document.querySelectorAll(".Links li").forEach((li, i) => {
+        li.classList.toggle("activeLink", i === index);
+      });
+    }
+  </script>
+</body>
+</html>
